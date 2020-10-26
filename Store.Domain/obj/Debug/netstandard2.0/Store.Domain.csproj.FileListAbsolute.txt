@@ -1,0 +1,9 @@
+D:\Projetos\CursoC#\Balta.io\Store\Store.Domain\bin\Debug\netstandard2.0\Store.Domain.deps.json
+D:\Projetos\CursoC#\Balta.io\Store\Store.Domain\bin\Debug\netstandard2.0\Store.Domain.dll
+D:\Projetos\CursoC#\Balta.io\Store\Store.Domain\bin\Debug\netstandard2.0\Store.Domain.pdb
+D:\Projetos\CursoC#\Balta.io\Store\Store.Domain\obj\Debug\netstandard2.0\Store.Domain.csprojAssemblyReference.cache
+D:\Projetos\CursoC#\Balta.io\Store\Store.Domain\obj\Debug\netstandard2.0\Store.Domain.AssemblyInfoInputs.cache
+D:\Projetos\CursoC#\Balta.io\Store\Store.Domain\obj\Debug\netstandard2.0\Store.Domain.AssemblyInfo.cs
+D:\Projetos\CursoC#\Balta.io\Store\Store.Domain\obj\Debug\netstandard2.0\Store.Domain.csproj.CoreCompileInputs.cache
+D:\Projetos\CursoC#\Balta.io\Store\Store.Domain\obj\Debug\netstandard2.0\Store.Domain.dll
+D:\Projetos\CursoC#\Balta.io\Store\Store.Domain\obj\Debug\netstandard2.0\Store.Domain.pdb
