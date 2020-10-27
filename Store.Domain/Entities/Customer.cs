@@ -1,3 +1,5 @@
+using Store.Domain.Repositories.Interfaces;
+
 namespace Store.Domain.Entities
 {
     public class Customer : Entity
