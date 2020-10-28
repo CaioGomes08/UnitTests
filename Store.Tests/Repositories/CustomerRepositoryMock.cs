@@ -7,7 +7,7 @@ namespace Store.Tests.Repositories
     {
         public Customer Get(string document)
         {
-            if (document == "1234567811")
+            if (document == "12345678911")
                 return new Customer("Bruce Wayne", "batma@balta.io");
 
             return null;
