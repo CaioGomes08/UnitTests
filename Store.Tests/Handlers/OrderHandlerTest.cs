@@ -85,14 +85,8 @@ namespace Store.Tests.Handlers
         [TestCategory("Handlers")]
         public void DadoUmComandoInvalidoOPedidoNaoDeveSerGerado()
         {
-            var command = new CreateOrderCommand();
-            command.Customer = "";
-            command.Zipcode = "12345678";
-            command.PromoCode = "12333";
-            command.Items.Add(new CreateOrderItemCommand(Guid.NewGuid(), 1));
-            command.Items.Add(new CreateOrderItemCommand(Guid.NewGuid(), 1));
+            var command = createCommand("", "12345678", "11111111", new CreateOrderItemCommand(Guid.NewGuid(), 1));
             command.Validate();
-
             Assert.AreEqual(false, command.Valid);
         }
 
@@ -101,21 +95,10 @@ namespace Store.Tests.Handlers
         public void DadoUmComandoValidoOPedidoDeveSerGerado()
         {
             // Cria um command
-            var command = new CreateOrderCommand();
-            command.Customer = "12345678";
-            command.Zipcode = "12345678";
-            command.PromoCode = "12333";
-            command.Items.Add(new CreateOrderItemCommand(Guid.NewGuid(), 1));
-            command.Items.Add(new CreateOrderItemCommand(Guid.NewGuid(), 1));
+            var command = createCommand("12345678911", "12345678", "11111111", new CreateOrderItemCommand(Guid.NewGuid(), 1));
 
             // Instancia um handler e resolve as dependencias
-            var handler = new OrderHandler(
-                _customerRepository,
-                _deliveryFeeRepository,
-                _discountRepository,
-                _productRepository,
-                _orderRepository
-            );
+            var handler = createHandler();
 
             handler.Handle(command);
             Assert.AreEqual(true, handler.Valid);
